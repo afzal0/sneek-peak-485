@@ -904,3 +904,57 @@ body {
 [data-theme="light"] #globe-container {
     background: radial-gradient(ellipse at center, #f0f4f8 0%, #ffffff 100%);
 }
+
+/* Data Attribution Footer */
+.data-attribution {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+    padding: 16px 24px;
+    margin-top: auto;
+}
+
+.attribution-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.attribution-text {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.attribution-text strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.citation-notice {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin: 0;
+}
+
+.citation-notice em {
+    color: var(--accent-blue);
+    font-weight: 500;
+}
+
+[data-theme="light"] .data-attribution {
+    background: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+    .attribution-text {
+        font-size: 11px;
+    }
+    
+    .citation-notice {
+        font-size: 10px;
+    }
+}
